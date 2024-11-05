@@ -13,18 +13,31 @@
 #     print("Seneye bekleriz :)")
 
 # 3- Not ortalaması en az 70 puan ve zayıfı yoksa teşekkür belgesi alabilme durumunu kontrol ediniz.
-notlar = list(map(int, input("Notlarınızı giriniz: ").split()))
-notOrtalamasi = sum(notlar)/len(notlar)
-zayif = False
 
-if notOrtalamasi >= 70 and zayif == False :
-    print("Teşekkür belgesi aldınız.")
-else : 
-    print("Belge yalan oldu.")
+# notlar = list(map(int, input("Notlarınızı giriniz: ").split()))
+# notOrtalamasi = sum(notlar)/len(notlar)
+# zayif = False
+
+# if notOrtalamasi >= 70 and zayif == False :
+#     print(notOrtalamasi)
+#     print("Teşekkür belgesi aldınız.")
+# else : 
+#     print(notOrtalamasi)
+#     print("Belge yalan oldu.")
+
 # 4- İşe girmek için en az önlisans ya da lisans mezunu olma durumunu kontrol ediniz. Sigara kullanmama koşulu.
 
-
-
+# egitimDurumu = input("Eğitim durumunuzu girin (önlisans, lisans): ")
+# sigara = bool(input("Sigara kullanıyor musunuz? (True, False): "))
+# print((egitimDurumu == "önlisans" or egitimDurumu == "lisans") and sigara)
 
 # 5- Uygulamaya giriş kontrolünü "username yada email" ve "parola" için yapalım.
 
+username = "yamatiko"
+email = "tanyamantevfik@gmail.com"
+parola = "Yaman12345"
+emailinput = input("email girin: ")
+usernameinput = input("username girin: ")
+kontrol = (username == usernameinput or email == emailinput) and parola == input("parola girin: ")
+
+print(kontrol)
