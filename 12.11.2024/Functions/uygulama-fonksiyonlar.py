@@ -23,26 +23,20 @@
 # print(yazitura())
 
 # 4- Kendisine gönderilen 2 sayı arasındaki tüm asal sayıları bulan fonksiyonu yazınız.
-# def asalSayimi(n) :
-#      if n <= 1:
-#         return False 
-#      if n <= 3 :
-#         return True
-#      if n % 2 == 0 or n % 3 == 0 :
-#         return False
-#      i = 5 
-#      while i * i <= n :
-#          if n % i == 0 or n % (i+2) == 0 :
-#              return False
-#          i += 6
-#      return True
+def aralarindaAsal(sayi1, sayi2) :
+    asallar = []
+    for sayi in range(sayi1,sayi2) :
+        if sayi > 1 :
+            for x in range(2, sayi) : 
+                if sayi % x == 0:
+                    break
+            else :
+                asallar.append(sayi)
+            
+                    
+    print(asallar)    
 
-# def aradaki_asallar(sayi1, sayi2) :
-#     asallar = []
-#     for sayi in range(sayi1, sayi2) :
-#         if asalSayimi(sayi) == True :
-#             asallar.append(sayi)
-#     return asallar
+aralarindaAsal(1,9)
 
 # print(aradaki_asallar(10,23))
 
